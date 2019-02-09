@@ -126,7 +126,7 @@ class MZSlider: UISlider {
     private func customThumbImage(strokeColor: UIColor, fillColor: UIColor) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 40, height: 40), false, 0)
         
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: 20,y: 20), radius: thumbRadius, startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+        let circlePath = UIBezierPath(arcCenter: CGPoint(x: 20,y: 20), radius: thumbRadius, startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)
         
         strokeColor.setStroke()
         fillColor.setFill()
